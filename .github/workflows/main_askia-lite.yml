@@ -27,9 +27,9 @@ jobs:
           npm run build --if-present
           # npm run test --passWithNoTests --if-present
           
-      - name : deploy in github page
-        run : |
-          git config --global user.email secret.PUBLISH_EMAIL
-          git config --global user.name secret.PUBLISH_NAME
-          GIT_USER=secret.PUBLISH_USERNAME npm run deploy
+       # - name : deploy in github page
+       #   run : |
+        #    git config --global user.email secret.PUBLISH_EMAIL
+        #    git config --global user.name secret.PUBLISH_NAME
+         #   GIT_USER=secret.PUBLISH_USERNAME npm run deploy
           
