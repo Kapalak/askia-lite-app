@@ -1,7 +1,6 @@
 import axios from "axios";
 import IUser from "../types/user.type";
 
-const API_URL = "http://localhost:8080/api/auth/";
 const API_PORTAL_URL = "https://rapide-dev.ipsosinteractive.com/AskiaPortal/api/";
 
 class AuthService {
