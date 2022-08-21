@@ -29,5 +29,5 @@ jobs:
           
       - name : deploy in github page
         run : |
-          npm run deploy
+          GIT_USER=secret.PUBLISH_USERNAME npm run deploy
           
