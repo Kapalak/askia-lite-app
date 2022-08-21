@@ -2,6 +2,7 @@
   "name": "askia-lite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kapalak.github.io/askia-lite",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.2.7",
@@ -11,9 +12,11 @@
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@types/react-router-dom": "^5.1.8",
+    "array-union": "^3.0.1",
     "axios": "^0.27.2",
     "bootstrap": "^4.6.0",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
@@ -23,6 +26,8 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
