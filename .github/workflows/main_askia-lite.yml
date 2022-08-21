@@ -29,5 +29,7 @@ jobs:
           
       - name : deploy in github page
         run : |
+          git config --global user.email secret.PUBLISH_USERNAME
+          git config --global user.name secret.PUBLISH_USERNAME
           GIT_USER=secret.PUBLISH_USERNAME npm run deploy
           
