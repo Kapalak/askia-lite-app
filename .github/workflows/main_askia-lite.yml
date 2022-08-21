@@ -27,6 +27,6 @@ jobs:
           npm run build --if-present
           # npm run test --passWithNoTests --if-present
           
-      - name : deploy in github page
-        run : |
-          npm run deploy
+      - uses: EdricChan03/action-build-deploy-ghpages@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
