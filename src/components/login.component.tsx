@@ -1,3 +1,4 @@
+import MyImage from '../logo.svg';
 import { Component } from "react";
 import { RouteComponentProps } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
@@ -80,7 +81,7 @@ export default class Login extends Component<Props, State> {
       <div className="col-md-12">
         <div className="card card-container">
           <img
-            src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+            src={MyImage}
             alt="profile-img"
             className="profile-img-card"
           />
