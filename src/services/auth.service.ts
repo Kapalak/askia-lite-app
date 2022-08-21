@@ -2,6 +2,7 @@ import axios from "axios";
 import IUser from "../types/user.type";
 
 const API_PORTAL_URL = "https://rapide-dev.ipsosinteractive.com/AskiaPortal/api/";
+// const API_PORTAL_URL = "http://localhost:8000/AskiaPortal/api/";
 
 class AuthService {
   login(username: string, password: string) {
@@ -11,7 +12,8 @@ class AuthService {
       password
     })
     .then(() => {     
-      axios.get(API_PORTAL_URL + "Account/Info").then(response => {
+      axios.get(API_PORTAL_URL + "Account/Info")
+      .then(response => {
         if (response.data.login) {
           var user = {} as IUser;
           user.id = response.data.guid;

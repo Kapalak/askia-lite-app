@@ -68,19 +68,19 @@ class App extends Component<Props, State> {
     return (
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
-          <Link to={"/"} className="navbar-brand">
+          <Link to={"/askia-lite"} className="navbar-brand">
             Askia Lite
           </Link>
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link to={"/home"} className="nav-link">
+              <Link to={"/askia-lite/home"} className="nav-link">
                 Home
               </Link>
             </li>
 
             {showModeratorBoard && (
               <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
+                <Link to={"/askia-lite/mod"} className="nav-link">
                   Moderator Board
                 </Link>
               </li>
@@ -88,7 +88,7 @@ class App extends Component<Props, State> {
 
             {showAdminBoard && (
               <li className="nav-item">
-                <Link to={"/admin"} className="nav-link">
+                <Link to={"/askia-lite/admin"} className="nav-link">
                   Admin Board
                 </Link>
               </li>
@@ -96,7 +96,7 @@ class App extends Component<Props, State> {
 
             {currentUser && (
               <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
+                <Link to={"/askia-lite/user"} className="nav-link">
                   User
                 </Link>
               </li>
@@ -106,12 +106,12 @@ class App extends Component<Props, State> {
           {currentUser ? (
             <div className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link to={"/profile"} className="nav-link">
+                <Link to={"/askia-lite/profile"} className="nav-link">
                   {currentUser.username}
                 </Link>
               </li>
               <li className="nav-item">
-                <a href="/login" className="nav-link" onClick={this.logOut}>
+                <a href="/askia-lite/login" className="nav-link" onClick={this.logOut}>
                   LogOut
                 </a>
               </li>
@@ -119,7 +119,7 @@ class App extends Component<Props, State> {
           ) : (
             <div className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link to={"/login"} className="nav-link">
+                <Link to={"/askia-lite/login"} className="nav-link">
                   Login
                 </Link>
               </li>
@@ -129,12 +129,12 @@ class App extends Component<Props, State> {
 
         <div className="container mt-3">
           <Switch>
-            <Route exact path={["/", "/home"]} component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/profile" component={Profile} />
-            <Route path="/user" component={BoardUser} />
-            <Route path="/mod" component={BoardModerator} />
-            <Route path="/admin" component={BoardAdmin} />
+            <Route exact path={["/askia-lite", "/askia-lite/home"]} component={Home} />
+            <Route exact path="/askia-lite/login" component={Login} />
+            <Route exact path="/askia-lite/profile" component={Profile} />
+            <Route path="/askia-lite/user" component={BoardUser} />
+            <Route path="/askia-lite/mod" component={BoardModerator} />
+            <Route path="/askia-lite/admin" component={BoardAdmin} />
           </Switch>
         </div>
 
