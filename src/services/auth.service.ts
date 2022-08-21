@@ -1,33 +1,32 @@
 import axios from "axios";
+import IUser from "../types/user.type";
 
 const API_URL = "http://localhost:8080/api/auth/";
+const API_PORTAL_URL = "https://rapide-dev.ipsosinteractive.com/AskiaPortal/api/";
 
 class AuthService {
   login(username: string, password: string) {
     return axios
-      .post(API_URL + "signin", {
-        username,
-        password
-      })
-      .then(response => {
-        if (response.data.accessToken) {
-          localStorage.setItem("user", JSON.stringify(response.data));
+    .post(API_PORTAL_URL + "Account/SignIn", {
+      userName: username,
+      password
+    })
+    .then(() => {     
+      axios.get(API_PORTAL_URL + "Account/Info").then(response => {
+        if (response.data.login) {
+          var user = {} as IUser;
+          user.id = response.data.guid;
+          user.username = response.data.login;
+          user.email = response.data.email;
+          localStorage.setItem("user", JSON.stringify(user));
+          return user;
         }
-
-        return response.data;
       });
+    });
   }
 
   logout() {
     localStorage.removeItem("user");
-  }
-
-  register(username: string, email: string, password: string) {
-    return axios.post(API_URL + "signup", {
-      username,
-      email,
-      password
-    });
   }
 
   getCurrentUser() {
