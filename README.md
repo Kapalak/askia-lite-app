@@ -2,7 +2,7 @@
 
 This project is a very small UI which consumes ASKIA API.
 
-https://askia.github.io/askia-lite-app/
+https://kapalak.github.io/askia-lite-app/
 
 This UI will be used for PoC for a SignalR framework.
 
@@ -23,4 +23,4 @@ For a basic case:
 ## Source code
 
 
-[![Build and deploy askia-lite](https://github.com/Askia/askia-lite/actions/workflows/main_askia-lite.yml/badge.svg)](https://github.com/Askia/askia-lite/actions/workflows/main_askia-lite.yml)
+[![Build and deploy askia-lite](https://github.com/Askia/askia-lite/actions/workflows/main_askia-lite.yml/badge.svg)](https://github.com/kapalak/askia-lite-app/actions/workflows/main_askia-lite.yml)
