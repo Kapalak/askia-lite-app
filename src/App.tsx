@@ -41,8 +41,8 @@ class App extends Component<Props, State> {
     if (user) {
       this.setState({
         currentUser: user,
-        showModeratorBoard: user.roles.includes("ROLE_MODERATOR"),
-        showAdminBoard: user.roles.includes("ROLE_ADMIN"),
+        showModeratorBoard: false,
+        showAdminBoard: false,
       });
     }
 
@@ -129,7 +129,7 @@ class App extends Component<Props, State> {
 
         <div className="container mt-3">
           <Switch>
-            <Route exact path={["/askia-lite-app", "/askia-lite/home"]} component={Home} />
+            <Route exact path={["/askia-lite-app", "/askia-lite-app/home"]} component={Home} />
             <Route exact path="/askia-lite-app/login" component={Login} />
             <Route exact path="/askia-lite-app/profile" component={Profile} />
             <Route path="/askia-lite-app/user" component={BoardUser} />
