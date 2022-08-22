@@ -1,4 +1,4 @@
-import MyImage from '../logo.svg';
+import MyImage from "../logo.svg";
 import { Component } from "react";
 import { RouteComponentProps } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
@@ -13,10 +13,10 @@ interface RouterProps {
 type Props = RouteComponentProps<RouterProps>;
 
 type State = {
-  username: string,
-  password: string,
-  loading: boolean,
-  message: string
+  username: string;
+  password: string;
+  loading: boolean;
+  message: string;
 };
 
 export default class Login extends Component<Props, State> {
@@ -28,7 +28,7 @@ export default class Login extends Component<Props, State> {
       username: "",
       password: "",
       loading: false,
-      message: ""
+      message: "",
     };
   }
 
@@ -44,45 +44,46 @@ export default class Login extends Component<Props, State> {
 
     this.setState({
       message: "",
-      loading: true
+      loading: true,
     });
 
-    AuthService.login(username, password)
-      .then(() => 
-        AuthService.getInfo()
-          .then(
-            () => {
-              this.props.history.push("/askia-lite-app/profile");
-              window.location.reload();
-            },
-            error => {
-              const resMessage =
-                (error.response &&
-                  error.response.data &&
-                  error.response.data.message) ||
-                error.message ||
-                error.toString();
 
-              this.setState({
-                loading: false,
-                message: resMessage
-              });
-            }
-          )
-          .catch(error => {
+
+    AuthService.login(username, password).then(() =>
+      AuthService.getInfo()
+        .then(
+          () => {
+            this.props.history.push("/askia-lite-app/profile");
+            window.location.reload();
+          },
+          (error) => {
             const resMessage =
-                (error.response &&
-                  error.response.data &&
-                  error.response.data.message) ||
-                error.message ||
-                error.toString();
-            console.log(resMessage);
+              (error.response &&
+                error.response.data &&
+                error.response.data.message) ||
+              error.message ||
+              error.toString();
+
             this.setState({
               loading: false,
-              message: resMessage
+              message: resMessage,
             });
-         }));
-    
+          }
+        )
+        .catch((error) => {
+          const resMessage =
+            (error.response &&
+              error.response.data &&
+              error.response.data.message) ||
+            error.message ||
+            error.toString();
+          console.log(resMessage);
+          this.setState({
+            loading: false,
+            message: resMessage,
+          });
+        })
+    );
 
     // AuthService.login(username, password).then(
     //   () => {
@@ -116,11 +117,7 @@ export default class Login extends Component<Props, State> {
     return (
       <div className="col-md-12">
         <div className="card card-container">
-          <img
-            src={MyImage}
-            alt="profile-img"
-            className="profile-img-card"
-          />
+          <img src={MyImage} alt="profile-img" className="profile-img-card" />
 
           <Formik
             initialValues={initialValues}
@@ -140,7 +137,11 @@ export default class Login extends Component<Props, State> {
 
               <div className="form-group">
                 <label htmlFor="password">Password</label>
-                <Field name="password" type="password" className="form-control" />
+                <Field
+                  name="password"
+                  type="password"
+                  className="form-control"
+                />
                 <ErrorMessage
                   name="password"
                   component="div"
@@ -149,7 +150,11 @@ export default class Login extends Component<Props, State> {
               </div>
 
               <div className="form-group">
-                <button type="submit" className="btn btn-primary btn-block" disabled={loading}>
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block"
+                  disabled={loading}
+                >
                   {loading && (
                     <span className="spinner-border spinner-border-sm"></span>
                   )}
