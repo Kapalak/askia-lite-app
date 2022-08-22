@@ -52,7 +52,7 @@ export default class Login extends Component<Props, State> {
         AuthService.getInfo()
           .then(
             () => {
-              this.props.history.push("/profile");
+              this.props.history.push("/askia-lite-app/profile");
               window.location.reload();
             },
             error => {
