@@ -2,7 +2,7 @@
 
 This project is a very small UI which consumes ASKIA API.
 
-https://askia.github.io/askia-lite/
+https://askia.github.io/askia-lite-app/
 
 This UI will be used for PoC for a SignalR framework.
 
