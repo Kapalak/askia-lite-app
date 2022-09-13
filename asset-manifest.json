@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/askia-lite-app/static/css/main.febac101.chunk.css",
-    "main.js": "/askia-lite-app/static/js/main.e13958fe.chunk.js",
-    "main.js.map": "/askia-lite-app/static/js/main.e13958fe.chunk.js.map",
+    "main.js": "/askia-lite-app/static/js/main.59f6ea1d.chunk.js",
+    "main.js.map": "/askia-lite-app/static/js/main.59f6ea1d.chunk.js.map",
     "runtime-main.js": "/askia-lite-app/static/js/runtime-main.edca093a.js",
     "runtime-main.js.map": "/askia-lite-app/static/js/runtime-main.edca093a.js.map",
     "static/css/2.c4e73993.chunk.css": "/askia-lite-app/static/css/2.c4e73993.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.c4e73993.chunk.css",
     "static/js/2.1f2fa3b6.chunk.js",
     "static/css/main.febac101.chunk.css",
-    "static/js/main.e13958fe.chunk.js"
+    "static/js/main.59f6ea1d.chunk.js"
   ]
 }
