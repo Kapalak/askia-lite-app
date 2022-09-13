@@ -53,7 +53,7 @@ export default class Login extends Component<Props, State> {
       AuthService.getInfo()
         .then(
           () => {
-            this.props.history.push("/askia-lite-app/profile");
+            this.props.history.push("/profile");
             window.location.reload();
           },
           (error) => {
@@ -158,7 +158,7 @@ export default class Login extends Component<Props, State> {
                   {loading && (
                     <span className="spinner-border spinner-border-sm"></span>
                   )}
-                  <span>Login</span>
+                  <span>Login V2</span>
                 </button>
               </div>
 
