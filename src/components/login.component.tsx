@@ -158,7 +158,7 @@ export default class Login extends Component<Props, State> {
                   {loading && (
                     <span className="spinner-border spinner-border-sm"></span>
                   )}
-                  <span>Login V2</span>
+                  <span>Login V3</span>
                 </button>
               </div>
 

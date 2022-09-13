@@ -1,8 +1,9 @@
 {
   "name": "askia-lite-app",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "private": true,
-  "homepage": "https://kapalak.github.io/",
+  "homepage": "https://kapalak.github.io/askia-lite-app",
+  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.2.7",
