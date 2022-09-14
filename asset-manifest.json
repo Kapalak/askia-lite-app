@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/askia-lite-app/static/css/main.febac101.chunk.css",
-    "main.js": "/askia-lite-app/static/js/main.aeda9f1c.chunk.js",
-    "main.js.map": "/askia-lite-app/static/js/main.aeda9f1c.chunk.js.map",
-    "runtime-main.js": "/askia-lite-app/static/js/runtime-main.edca093a.js",
-    "runtime-main.js.map": "/askia-lite-app/static/js/runtime-main.edca093a.js.map",
-    "static/css/2.c4e73993.chunk.css": "/askia-lite-app/static/css/2.c4e73993.chunk.css",
-    "static/js/2.1f2fa3b6.chunk.js": "/askia-lite-app/static/js/2.1f2fa3b6.chunk.js",
-    "static/js/2.1f2fa3b6.chunk.js.map": "/askia-lite-app/static/js/2.1f2fa3b6.chunk.js.map",
-    "static/js/3.d3875c77.chunk.js": "/askia-lite-app/static/js/3.d3875c77.chunk.js",
-    "static/js/3.d3875c77.chunk.js.map": "/askia-lite-app/static/js/3.d3875c77.chunk.js.map",
+    "main.css": "/askia-lite-app/static/css/main.fc4eb8b3.chunk.css",
+    "main.js": "/askia-lite-app/static/js/main.a44fbed3.chunk.js",
+    "main.js.map": "/askia-lite-app/static/js/main.a44fbed3.chunk.js.map",
+    "runtime-main.js": "/askia-lite-app/static/js/runtime-main.a6b13aa1.js",
+    "runtime-main.js.map": "/askia-lite-app/static/js/runtime-main.a6b13aa1.js.map",
+    "static/css/2.27dd871e.chunk.css": "/askia-lite-app/static/css/2.27dd871e.chunk.css",
+    "static/js/2.8f8d5d4f.chunk.js": "/askia-lite-app/static/js/2.8f8d5d4f.chunk.js",
+    "static/js/2.8f8d5d4f.chunk.js.map": "/askia-lite-app/static/js/2.8f8d5d4f.chunk.js.map",
+    "static/js/3.47ab3aa4.chunk.js": "/askia-lite-app/static/js/3.47ab3aa4.chunk.js",
+    "static/js/3.47ab3aa4.chunk.js.map": "/askia-lite-app/static/js/3.47ab3aa4.chunk.js.map",
     "index.html": "/askia-lite-app/index.html",
-    "static/css/2.c4e73993.chunk.css.map": "/askia-lite-app/static/css/2.c4e73993.chunk.css.map",
-    "static/css/main.febac101.chunk.css.map": "/askia-lite-app/static/css/main.febac101.chunk.css.map",
-    "static/js/2.1f2fa3b6.chunk.js.LICENSE.txt": "/askia-lite-app/static/js/2.1f2fa3b6.chunk.js.LICENSE.txt",
+    "static/css/2.27dd871e.chunk.css.map": "/askia-lite-app/static/css/2.27dd871e.chunk.css.map",
+    "static/css/main.fc4eb8b3.chunk.css.map": "/askia-lite-app/static/css/main.fc4eb8b3.chunk.css.map",
+    "static/js/2.8f8d5d4f.chunk.js.LICENSE.txt": "/askia-lite-app/static/js/2.8f8d5d4f.chunk.js.LICENSE.txt",
     "static/media/logo.b197ed51.svg": "/askia-lite-app/static/media/logo.b197ed51.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.edca093a.js",
-    "static/css/2.c4e73993.chunk.css",
-    "static/js/2.1f2fa3b6.chunk.js",
-    "static/css/main.febac101.chunk.css",
-    "static/js/main.aeda9f1c.chunk.js"
+    "static/js/runtime-main.a6b13aa1.js",
+    "static/css/2.27dd871e.chunk.css",
+    "static/js/2.8f8d5d4f.chunk.js",
+    "static/css/main.fc4eb8b3.chunk.css",
+    "static/js/main.a44fbed3.chunk.js"
   ]
 }
